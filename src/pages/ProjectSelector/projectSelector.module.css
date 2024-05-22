@@ -13,6 +13,8 @@
 .projectContainer {
     width: 100%;
     height: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .projectImg {
@@ -23,5 +25,43 @@
 
 .projectImg:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 1px var(--main-colorFuchsia);
+    box-shadow: 1px 1px 1px 1px var(--main-colorFuchsia);
 }
+
+.projectLogo {
+    display: block;
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -moz-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -o-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: 140px; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: 140px; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 140px; }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: 140px; }
+  }
