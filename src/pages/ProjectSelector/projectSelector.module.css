@@ -1,5 +1,9 @@
-.container {
-    width: 100%;
-    height: 5rem;
-    background-color: red;
+.projectSelectorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--main-colorDark);
 }
