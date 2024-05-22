@@ -1,6 +1,6 @@
 header {
     display: flex;
-    background-color: var(--main-color);
+    background-color: var(--main-color2);
     position: fixed;
     justify-content: center;
     top: 0;
@@ -16,8 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 50%;
-    background-color: var(--main-color);
+    width: 60vw;
+    background-color: var(--main-color2);
 }
 
 .logoLeon {
