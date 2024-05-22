@@ -1,7 +1,7 @@
 import './Global.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ProjectSelector from './pages/ProjectSelector/projectSelector.jsx';
-import Afantasia from './pages/Afantasia/Afantasia.jsx';
+import { ProjectSelector } from './pages/ProjectSelector/projectSelector.jsx';
+import { Afantasia } from './pages/Afantasia/Afantasia.jsx';
 
 function App() {
   return (

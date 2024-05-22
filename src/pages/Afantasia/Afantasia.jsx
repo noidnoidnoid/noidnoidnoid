@@ -1,4 +1,4 @@
-import styles from './projectSelector.module.css'
+import styles from './afantasia.module.css'
 
 export function Afantasia() {
     return (
