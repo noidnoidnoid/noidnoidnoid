@@ -13,8 +13,8 @@ export function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ProjectSelector />} />
-          <Route path="/afantasia" element={<Afantasia />} />
+          <Route path="/3D-Portfolio/" element={<ProjectSelector />} />
+          <Route path="/3D-Portfolio/afantasia" element={<Afantasia />} />
         </Routes>
       </BrowserRouter>
       <Footer />
