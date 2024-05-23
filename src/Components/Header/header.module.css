@@ -17,10 +17,6 @@ header {
     background-color: var(--main-color2);
 }
 
-.logoLeon {
-    width: 15%;
-}
-
 .projectSelectorTitle {
     font-family: "Lemon Milk";
     font-size: 2rem;
@@ -38,3 +34,50 @@ header {
     color: var(--main-colorFuchsia); 
   }
   
+@media (max-width: 1200px) {
+    header{
+        height: 6rem;
+    }
+    .contact, .name {
+        font-size: 1.25rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header{
+        height: 5rem;
+    }
+    .contact, .name {
+        font-size: 1.1rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 750px) {
+    header{
+        height: 4rem;
+    }
+    .contact, .name {
+        font-size: 1rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header{
+        height: 3rem;
+    }
+    .contact, .name {
+        font-size: .5rem;
+    }
+    .projectSelectorTitle {
+        font-size: .65rem;
+    }
+}

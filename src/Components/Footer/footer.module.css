@@ -103,3 +103,153 @@ footer {
     height: 4rem;
     width: 4rem;
 }
+
+@media (max-width: 1500px) {
+    footer {
+        padding: 1.5rem;
+    }
+    .footerContainer {
+        height: 4.5rem;
+        gap: 1.8rem;
+    }
+    .infoSection {
+        gap: 2.5rem;
+    }
+    .info{
+        gap: 0.8rem;
+        font-size: 0.8rem;
+    }
+    .personalInfo {
+        gap: .8rem;
+        font-size: 1rem;
+    }
+    .linkSection {
+        gap: 0.8rem;
+    }
+    .linkRow {
+        gap: 0.8rem;
+    }
+    .linkRow > a {
+        font-size: 1.25rem;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    footer {
+        padding: 1rem;
+    }
+    .footerContainer {
+        height: 4rem;
+        gap: 1.5rem;
+    }
+    .infoSection {
+        gap: 2rem;
+    }
+    .info{
+        gap: 0.6rem;
+        font-size: 0.6rem;
+    }
+    .personalInfo {
+        gap: .6rem;
+        font-size: 0.8rem;
+    }
+    .linkSection {
+        gap: 0.6rem;
+    }
+    .linkRow {
+        gap: 0.6rem;
+    }
+    .linkRow > a {
+        font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    footer {
+        padding: .5rem;
+    }
+    .footerContainer {
+        height: 3.5rem;
+        gap: .8rem;
+    }
+    .infoSection {
+        gap: 1rem;
+    }
+    .info{
+        gap: 0.4rem;
+        font-size: 0.4rem;
+    }
+    .personalInfo {
+        gap: .4rem;
+        font-size: 0.6rem;
+    }
+    .linkSection {
+        gap: 0.4rem;
+    }
+    .linkRow {
+        gap: 0.4rem;
+    }
+    .linkRow > a {
+        font-size: .8rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    footer {
+        padding: .4rem;
+    }
+    .footerContainer {
+        height: 3rem;
+        gap: .6rem;
+    }
+    .infoSection {
+        gap: .6rem;
+    }
+    .info{
+        gap: 0.45rem;
+        font-size: 0.45rem;
+    }
+    .personalInfo {
+        gap: .45rem;
+        font-size: 0.45rem;
+    }
+    .linkSection {
+        gap: 0.3rem;
+    }
+    .linkRow {
+        gap: 0.3rem;
+    }
+    .linkRow > a {
+        font-size: .5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    footer {
+        padding: .25rem;
+    }
+    .footerContainer {
+        height: 3rem;
+        gap: .4rem;
+    }
+    .infoSection {
+        gap: .4rem;
+    }
+    .info{
+        gap: 0.3rem;
+        font-size: 0.3rem;
+    }
+    .personalInfo {
+        gap: .3rem;
+        font-size: 0.3rem;
+    }
+    .linkSection {
+        gap: 0.2rem;
+    }
+    .linkRow {
+        gap: 0.2rem;
+    }
+    .linkRow > a {
+        font-size: .4rem;
+    }
+  }
