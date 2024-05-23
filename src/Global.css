@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Lemon Milk;
-  src: url(3D-Portfolio\src\assets\LEMONMILK-LIGHT.OTF) format('truetype');
+  src: url(.\assets\LEMONMILK-LIGHT.OTF) format('truetype');
 }
 
 :root {
