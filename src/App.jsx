@@ -7,7 +7,7 @@ import { ProjectSelector } from './pages/ProjectSelector/projectSelector.jsx';
 import { Afantasia } from './pages/Afantasia/Afantasia.jsx';
 
 
-function App() {
+export function App() {
   return (
     <>
       <Header />
