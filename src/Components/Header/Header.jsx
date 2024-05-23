@@ -3,7 +3,7 @@ import styles from './header.module.css'
 export function Header() {
 
     const redirectToProjectSelector = () => {
-        window.location.href = '/';
+        window.location.href = '/3D-Portfolio/';
     };
 
     const redirectToLinkedIn = () => {

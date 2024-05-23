@@ -7,7 +7,7 @@ import EmptyBanner from '../../assets/EmptyBanner.png'
 export function ProjectSelector() {
 
     const redirectToAfantasiaPage = () => {
-        window.location.href = '/afantasia';
+        window.location.href = '/3D-Portfolio/afantasia';
     }
 
     return (
