@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    background-color: var(--main-color2);
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+    z-index: 9999; 
+    box-shadow: rgba(100, 100, 111, 0.2) 1px 5px 10px 9px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 60vw;
+    background-color: var(--main-color2);
+}
+
+.projectSelectorTitle {
+    font-family: "Lemon Milk";
+    font-size: 2rem;
+    color: var(--main-colorDark);
+}
+
+.contact, .name {
+    font-family: "Lemon Milk";
+    font-size: 1.5rem;
+    color: var(--main-colorDark);
+}
+
+.name:hover, .contact:hover, .projectSelectorTitle:hover {
+    cursor: pointer; 
+    color: var(--main-colorFuchsia); 
+  }
+  
+@media (max-width: 1200px) {
+    header{
+        height: 6rem;
+    }
+    .contact, .name {
+        font-size: 1.25rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header{
+        height: 5rem;
+    }
+    .contact, .name {
+        font-size: 1.1rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 750px) {
+    header{
+        height: 4rem;
+    }
+    .contact, .name {
+        font-size: 1rem;
+    }
+    .projectSelectorTitle {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header{
+        height: 3rem;
+    }
+    .contact, .name {
+        font-size: .5rem;
+    }
+    .projectSelectorTitle {
+        font-size: .65rem;
+    }
+}
