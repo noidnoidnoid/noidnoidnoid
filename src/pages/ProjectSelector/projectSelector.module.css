@@ -16,9 +16,9 @@ main {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  height: auto;
-  width: 80vw;
-  max-width: 1500px;
+  margin-bottom: 15vh;
+  height: 100vh;
+  width: 85vw;
   gap: 3rem;
 }
 
@@ -46,15 +46,21 @@ main {
   height: auto;
   object-fit: contain;
   position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
   -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   -moz-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   -o-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
 }
+
+.projectLogo:hover {
+  opacity: 0;
+}
   
 @keyframes moveX {
   from { left: 0; }
-  to { left: calc(80vw - 25rem); }
+  to { left: calc(85vw - 25rem); }
 }
 
 @keyframes moveY {
@@ -62,8 +68,21 @@ main {
   to { top: calc(100% - 3.72rem); } 
 }
 
-@media (max-width: 1600px) {
 
+@media (max-width: 2000px) {
+  .projectSelectorContainer {
+    padding-bottom: 12rem;
+    width: 90vw;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .projectSelectorContainer {
+    padding-bottom: 1.5rem;
+    width: 85vw;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -71,9 +90,19 @@ main {
 }
 
 @media (max-width: 1000px) {
-
+  main {
+    height: 60vh;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+  main {
+    height: 35vh;
+  }
+}
 
+@media (max-width: 500px) {
+  main {
+    height: 25vh;
+  }
 }
