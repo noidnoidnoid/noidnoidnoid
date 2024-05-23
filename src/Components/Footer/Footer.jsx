@@ -4,7 +4,7 @@ import NoidLogo from '../../assets/Logo noidnoidnoid.png'
 
 export function Footer() {
     return (
-        <footer>
+        <footer id='footer'>
             <div className={styles.footerContainer}>
                 <div className={styles.infoSection}>
                     <img className={styles.logo} src={NoidLogo} alt="Logo noidnoidnoid"/>

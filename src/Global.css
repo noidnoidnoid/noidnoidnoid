@@ -145,8 +145,3 @@ q:after {
   content: '';
   content: none;
 }
-
-h1:hover {
-  cursor: pointer; 
-  color: var(--main-colorFuchsia); 
-}

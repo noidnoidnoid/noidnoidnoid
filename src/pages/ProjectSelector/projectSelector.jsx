@@ -5,11 +5,16 @@ import AfantasiaLogo from '../../assets/Logo Afantasia.png'
 import EmptyBanner from '../../assets/EmptyBanner.png'
 
 export function ProjectSelector() {
+
+    const redirectToAfantasiaPage = () => {
+        window.location.href = '/afantasia';
+    }
+
     return (
         <main>
             <div className={styles.projectSelectorContainer}>
                 <div className={styles.projectContainer}>
-                    <img className={styles.projectImg} src={AfantasiaBanner}/>
+                    <img className={styles.projectImg} src={AfantasiaBanner} onClick={redirectToAfantasiaPage}/>
                     <img className={styles.projectLogo} src={AfantasiaLogo} />
                 </div>
                 <div className={styles.projectContainer}>
