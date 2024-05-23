@@ -3,7 +3,6 @@ import styles from './projectSelector.module.css'
 import AfantasiaBanner from '../../assets/AfantasiaBanner.png'
 import AfantasiaLogo from '../../assets/Logo Afantasia.png'
 import EmptyBanner from '../../assets/EmptyBanner.png'
-//import TBALogo from '../../assets/Logo TBA.png'
 
 export function ProjectSelector() {
     return (

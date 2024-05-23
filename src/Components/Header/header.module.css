@@ -27,7 +27,7 @@ header {
     color: var(--main-colorDark);
 }
 
-.contact {
+.contact, .name {
     font-family: "Lemon Milk";
     font-size: 1.5rem;
     color: var(--main-colorDark);
