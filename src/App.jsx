@@ -6,11 +6,10 @@ import { Footer } from './Components/Footer/Footer.jsx';
 import { ProjectSelector } from './pages/ProjectSelector/projectSelector.jsx';
 import { Afantasia } from './pages/Afantasia/Afantasia.jsx';
 
-
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <BrowserRouter>
         <Routes>
           <Route path="/3D-Portfolio/" element={<ProjectSelector />} />

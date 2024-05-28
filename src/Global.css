@@ -126,6 +126,7 @@ aside {
 
 body {
   line-height: 1;
+  height: auto;
 }
 
 ol,
