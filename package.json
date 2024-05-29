@@ -2,7 +2,7 @@
   "name": "3d-portfolio",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://noidnoidnoid.github.io/3D-Portfolio/",
+  "homepage": "3D-Portfolio/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r git@github.com:noidnoidnoid/3D-Portfolio.git"
+    "deploy": "gh-pages -d dist -r git@github.com:noidnoidnoid/3D-Portfolio.git"
   },
   "dependencies": {
     "esm": "^3.2.25",

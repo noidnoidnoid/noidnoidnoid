@@ -3,7 +3,7 @@ import styles from './header.module.css'
 export function Header() {
 
     const redirectToProjectSelector = () => {
-        window.location.href = '/3D-Portfolio/';
+        window.location.href = '#/';
     };
 
     const redirectToLinkedIn = () => {
@@ -18,7 +18,7 @@ export function Header() {
         <header>
             <div className={styles.container}>
                 <h1 className={styles.name} onClick={redirectToLinkedIn}>Leon Stevans</h1>
-                <h1 className={styles.projectSelectorTitle} onClick={redirectToProjectSelector}>Project Selector AAA</h1>
+                <h1 className={styles.projectSelectorTitle} onClick={redirectToProjectSelector}>Project Selector</h1>
                 <h1 className={styles.contact} onClick={scrollToFooter}>Contact</h1>
             </div>
         </header>
