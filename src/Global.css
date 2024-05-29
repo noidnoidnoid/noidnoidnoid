@@ -14,7 +14,6 @@
   --main-colorDark: #242424;
   --main-colorDarker: #1a1a1a;
   --main-colorFuchsia: #ff0054;
-
 }
 
 html,
@@ -126,7 +125,7 @@ aside {
 
 body {
   line-height: 1;
-  height: auto;
+  background-color: var(--main-colorDarker);
 }
 
 ol,
