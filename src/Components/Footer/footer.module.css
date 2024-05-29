@@ -1,236 +1,146 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .main-content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 footer {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--main-colorDarker);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    width: 100%;
-    height: auto;
-    gap: 2rem;
-    z-index: 9999;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-colorDarker);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+  z-index: 9999;
 }
 
 .footerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background-color: var(--main-colorDarker);
-    width: 85%;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--main-colorDarker);
+  width: 85%;
+  height: 100%;
 }
 
 .logo {
-    width: 20%;
-    height: auto;
-    object-fit: contain;
+  width: 20%;
+  height: auto;
+  object-fit: contain;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    height: 100%;
-    background-color: var(--main-colorDarker);
-    font-family: "Lemon Milk";
-    font-size: 1rem;
-    color: var(--main-color2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  background-color: var(--main-colorDarker);
+  font-family: "Lemon Milk";
+  font-size: 1rem;
+  color: var(--main-color2);
 }
 
-.verticalLine{
-    border-left: 1px solid var(--main-color2);
-    margin: 0;
-    height: 50%;
+.verticalLine {
+  border-left: 1px solid var(--main-color2);
+  margin: 0;
+  height: 50%;
 }
 
 .personalInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    height: 100%;
-    background-color: var(--main-colorDarker);
-    font-family: "Lemon Milk";
-    font-size: 1rem;
-    color: var(--main-color2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  background-color: var(--main-colorDarker);
+  font-family: "Lemon Milk";
+  font-size: 1rem;
+  color: var(--main-color2);
 }
 
 .linkSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
 }
 
 .linkSection > a {
-    color: var(--main-color2);
-    font-size: 1.5rem;
+  color: var(--main-color2);
+  font-size: 1.5rem;
 }
 
 .linkSection > a:hover {
-    color: var(--main-colorFuchsia);
+  color: var(--main-colorFuchsia);
 }
 
 .noidBar {
-    width: 85%;
-    height: 5vh;
-    background-image: url('../../assets/Logo noidnoidnoid.png');
-    background-size: contain;
-    background-repeat: repeat-x;
+  width: 85%;
+  height: 5vh;
+  background-image: url("../../assets/Logo noidnoidnoid grayscale.png");
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
 @media (max-width: 1500px) {
-    .footerContainer {
-        gap: 1.8rem;
-    }
-    .infoSection {
-        gap: 2.5rem;
-    }
-    .info{
-        gap: 0.8rem;
-        font-size: 0.8rem;
-    }
-    .personalInfo {
-        gap: .8rem;
-        font-size: 1rem;
-    }
-    .linkSection {
-        gap: 0.8rem;
-    }
-    .linkSection > a {
-        font-size: 1.25rem;
-    }
-  }
+}
 
-  @media (max-width: 1300px) {
-    .footerContainer {
-        width: 80%;
-        gap: 1.5rem;
-    }
-    .noidBar {
-        width: 80%;
-    }
-    .infoSection {
-        gap: 2rem;
-    }
-    .info{
-        gap: 0.6rem;
-        font-size: 0.8rem;
-    }
-    .personalInfo {
-        gap: .6rem;
-        font-size: 0.8rem;
-    }
-    .linkSection {
-        gap: 0.6rem;
-    }
-    .linkSection > a {
-        font-size: 1rem;
-    }
+@media (max-width: 1300px) {
+  .footerContainer {
+    width: 80%;
   }
+  .noidBar {
+    width: 80%;
+  }
+}
 
-  @media (max-width: 1200px) {
-    .footerContainer {
-        width: 95%;
-        gap: 1rem;
-    }
-    .noidBar {
-        width: 95%;
-    }
-    .infoSection {
-        gap: 1rem;
-    }
-    .info{
-        gap: 0.6rem;
-        font-size: 1rem;
-    }
-    .personalInfo {
-        gap: .6rem;
-        font-size: 1rem;
-    }
-    .linkSection {
-        gap: 0.4rem;
-    }
-    .linkSection > a {
-        font-size: 1rem;
-    }
+@media (max-width: 1200px) {
+  .footerContainer {
+    width: 95%;
   }
+  .noidBar {
+    width: 95%;
+  }
+}
 
-  @media (max-width: 800px) {
-    .footerContainer {
-        width: 100%;
-        gap: .6rem;
-    }
-    .noidBar {
-        width: 100%;
-    }
-    .infoSection {
-        gap: .8rem;
-    }
-    .info{
-        gap: 0.5rem;
-        font-size: 0.8rem;
-    }
-    .logo {
-        height: 40%;
-    }
-    .personalInfo {
-        gap: .4rem;
-        font-size: 0.8rem;
-    }
-    .linkSection {
-        gap: 0.4rem;
-    }
-    .linkSection > a {
-        font-size: .9rem;
-    }
+@media (max-width: 800px) {
+  .footerContainer {
+    width: 95%;
   }
+  .noidBar {
+    width: 95%;
+  }
+  .logo {
+    height: 40%;
+  }
+}
 
-  @media (max-width: 500px) {
-    .footerContainer {
-        width: 90%;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .noidBar {
-        width: 90%;
-    }
-    .infoSection {
-        gap: .6rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .info{
-        gap: 0.4rem;
-        font-size: 0.6rem;
-    }
-    .personalInfo {
-        gap: .4rem;
-        font-size: 0.6rem;
-    }
-    .linkSection {
-        gap: .5rem;
-    }
-    .linkSection > a {
-        font-size: .6rem;
-    }
+@media (max-width: 500px) {
+  .footerContainer {
+    width: 90%;
+    align-items: flex-start;
+    flex-direction: column;
   }
+  .noidBar {
+    width: 90%;
+  }
+  .infoSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -145,3 +145,33 @@ q:after {
   content: '';
   content: none;
 }
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
