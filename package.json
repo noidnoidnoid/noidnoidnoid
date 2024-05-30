@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
+    "framer-motion": "^11.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
@@ -31,7 +32,6 @@
   },
   "description": "Design and Modeling: Blender.\r Rendering: Unreal Engine. \r Website developed in React + Vite.",
   "main": "vite.config.js",
-
   "module": "main.js",
   "author": "",
   "license": "ISC"

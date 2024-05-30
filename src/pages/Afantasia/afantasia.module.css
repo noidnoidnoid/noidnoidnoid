@@ -1,19 +1,25 @@
 .assetsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
     width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     background-color: var(--main-colorDark);
 }
 
 .assetContainer{
+    padding: 2.5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    cursor: grab;
+    overflow: hidden;
 }
 
 .imgContainer {
@@ -21,12 +27,17 @@
     flex-direction: row;
     gap: 2rem;
     height: 40vh;
+    overflow: hidden;
+}
+
+.item {
 }
 
 .assetImg {
     height: 100%;
     width: auto;
     object-fit: contain;
+    pointer-events: none;
 }
 
 .assetText {
