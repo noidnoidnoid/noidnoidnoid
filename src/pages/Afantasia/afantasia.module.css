@@ -40,6 +40,16 @@
     pointer-events: none;
 }
 
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .assetText {
-    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-size: 1rem;
+    color: var(--main-colorLight);
 }

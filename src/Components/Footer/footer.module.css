@@ -32,6 +32,7 @@ footer {
   background-color: var(--main-colorDarker);
   width: 85%;
   height: 100%;
+  gap: .25rem;
 }
 
 .logo {
@@ -91,7 +92,7 @@ footer {
 
 .noidBar {
   width: 85%;
-  height: 5vh;
+  height: 2vh;
   background-image: url("../../assets/Logo noidnoidnoid grayscale.png");
   background-size: contain;
   background-repeat: repeat-x;

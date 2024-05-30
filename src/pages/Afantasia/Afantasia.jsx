@@ -1,49 +1,61 @@
 import styles from './afantasia.module.css';
-import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 // Importação das imagens
 import AloeSpin from '../../assets/afantasia assets/Aloe/AloeSpin.gif';
 import AloeStand from '../../assets/afantasia assets/Aloe/AloeStand.gif';
 import AloeTopologyFront from '../../assets/afantasia assets/Aloe/AloeTopologyFront.png';
 import AloeTopologyBack from '../../assets/afantasia assets/Aloe/AloeTopologyBack.png';
-const AloeAssets = [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack];
 
 import InventorySceneInGame from '../../assets/afantasia assets/InventoryScene/InventorySceneRenderInGame.gif';
 import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/InventorySceneRender.png';
 import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology1.png';
 import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology2.png';
-const InventorySceneAssets = [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2];
 
-const Assets = [AloeAssets, InventorySceneAssets];
-const AssetTexts = ["Low Poly Model of Aloe Character", "Inventory Scene In Game, Render and Topology"]
+// Definição dos grupos de ativos com seus textos correspondentes
+const assetGroups = [
+    {
+        images: [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack],
+        text: "Low Poly Model of Aloe Character"
+    },
+    {
+        images: [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2],
+        text: "Inventory Scene In Game, Render and Topology"
+    }
+];
 
 export function Afantasia() {
-    const carousel = useRef();
-    const [width, setWidth] = useState(0);
+    // Estado para controlar a animação
+    const [isAnimating, setIsAnimating] = useState(true);
 
-    useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }, []);
+    // Função para alternar o estado de animação
+    const toggleAnimation = () => {
+        setIsAnimating(!isAnimating);
+    };
 
     return (
         <div className={styles.assetsContainer}>
-            {Assets.map((assetGroup, index) => (
-                <motion.div ref={carousel} className={styles.assetContainer} whileTap={{ cursor: "grabbing"}} key={`group-${index}`}>
+            {assetGroups.map((group, index) => (
+                <motion.div className={styles.assetContainer} whileTap={{ cursor: "grabbing"}} key={`group-${index}`}>
                     <motion.div 
                         className={styles.imgContainer} 
                         drag="x" 
-                        dragConstraints={{ right: width, left: -width}} 
+                        dragConstraints={{ right: 900, left: -900}} 
                         initial={{ x: 100 }}
-                        animate={{ x: 0 }}
+                        animate={{ x: isAnimating? 0 : 100 }} // Altera a animação com base no estado
+                        transition={{ duration: 0.5 }} // Adiciona uma transição suave
                     >
-                        {assetGroup.map((image, imgIndex) => (
+                        {group.images.map((image, imgIndex) => (
                             <motion.div className={styles.item} key={`${image}-${imgIndex}`}>
                                 <img className={styles.assetImg} src={image} alt="Asset Image" />
                             </motion.div>
                         ))}
                     </motion.div>
-                    <p className={styles.assetText}>{AssetTexts[index]}</p>
+                    <div className={styles.textContainer}>
+                        <p className={styles.assetText}>{group.text}</p>
+                        <button className={styles.refreshButton} onClick={toggleAnimation}>R</button>
+                    </div>
                 </motion.div>
             ))}
         </div>
