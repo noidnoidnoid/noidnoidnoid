@@ -91,7 +91,7 @@ export function Afantasia() {
                         whileTap={{ cursor: "grabbing"}}
                         dragConstraints={{ right: 900, left: -900}} 
                         initial={{ x: 100 }}
-                        animate={{ x: isAnimating? 0 : 100 }} // Altera a animação com base no estado
+                        animate={{ x: isAnimating? 0 : 100 }}
                     >
                         {group.images.map((image, imgIndex) => (
                             <motion.div className={styles.item} key={`${image}-${imgIndex}`}>

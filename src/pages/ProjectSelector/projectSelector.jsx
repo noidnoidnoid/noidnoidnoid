@@ -1,4 +1,5 @@
 import styles from './projectSelector.module.css'
+import { motion } from 'framer-motion'
 
 import AfantasiaBanner from '../../assets/AfantasiaBanner.png'
 import AfantasiaLogo from '../../assets/Logo Afantasia.png'
@@ -13,16 +14,28 @@ export function ProjectSelector() {
     return (
         <main>
             <div className={styles.projectSelectorContainer}>
-                <div className={styles.projectContainer}>
+                <motion.div 
+                className={styles.projectContainer} 
+                initial={{ x: 100 }}
+                animate={{ x: 0}}
+                >
                     <img className={styles.projectImg} src={AfantasiaBanner} onClick={redirectToAfantasiaPage}/>
                     <img className={styles.projectLogo} src={AfantasiaLogo} onClick={redirectToAfantasiaPage}/>
-                </div>
-                <div className={styles.projectContainer}>
+                </motion.div>
+                <motion.div 
+                className={styles.projectContainer} 
+                initial={{ x: 100 }}
+                animate={{ x: 0}}
+                >
                     <img className={styles.projectImg} src={EmptyBanner} alt="" />
-                </div>
-                <div className={styles.projectContainer}>
+                </motion.div>
+                <motion.div 
+                className={styles.projectContainer} 
+                initial={{ x: 100 }}
+                animate={{ x: 0}}
+                >
                     <img className={styles.projectImg} src={EmptyBanner} alt="" />
-                </div>
+                </motion.div>
 
             </div>
         </main>
