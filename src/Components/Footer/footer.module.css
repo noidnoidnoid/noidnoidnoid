@@ -90,14 +90,6 @@ footer {
   color: var(--main-colorFuchsia);
 }
 
-.noidBar {
-  width: 85%;
-  height: 2vh;
-  background-image: url("../../assets/Logo noidnoidnoid grayscale.png");
-  background-size: contain;
-  background-repeat: repeat-x;
-}
-
 @media (max-width: 1500px) {
 }
 

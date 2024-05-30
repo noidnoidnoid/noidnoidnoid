@@ -78,16 +78,22 @@ export function Afantasia() {
     const [isAnimating, setIsAnimating] = useState(true);
     const [selectedImage, setSelectedImage] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
+
+    const handleDragStart = () => setIsDragging(true);
+    const handleDragEnd = () => setIsDragging(false);
 
     // Função para alternar o estado de animação
     const toggleAnimation = () => {
         setIsAnimating(prevState =>!prevState);
     };
 
-    // Função para exibir o modal de imagem 
+    // Função para exibir o modal de imagem
     function showImageDialog(image) {
-        setSelectedImage(image);
-        setIsModalOpen(true);
+        if (!isDragging) {
+            setSelectedImage(image);
+            setIsModalOpen(true);
+        }
     }
 
     return (
@@ -102,6 +108,8 @@ export function Afantasia() {
                             dragConstraints={{ right: 900, left: -900}} 
                             initial={{ x: 100 }}
                             animate={{ x: isAnimating? 0 : 100 }}
+                            onDragStart={handleDragStart}
+                            onDragEnd={handleDragEnd}
                         >
                             {group.images.map((image, imgIndex) => (
                                 <motion.div className={styles.item} key={`${image}-${imgIndex}`} onClick={() => showImageDialog(image)}>

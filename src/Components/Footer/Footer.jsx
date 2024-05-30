@@ -18,7 +18,6 @@ export function Footer() {
                     <a href="https://gitlab.com/L1fuchsia">[GitLab]</a>
                 </div>
             </div>
-            <div className={styles.noidBar}></div>
         </footer>
     )
 }
