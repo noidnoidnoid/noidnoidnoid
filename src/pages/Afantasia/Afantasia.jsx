@@ -35,6 +35,11 @@ import BarBalconyTopology from '../../assets/afantasia assets/BAR/BarBalconyTopo
 import BarBasementTopology from '../../assets/afantasia assets/BAR/BarBasementTopology.png';
 import BarCounterTopology from '../../assets/afantasia assets/BAR/BarCounterTopology.png';
 
+import BusStopRender1 from '../../assets/afantasia assets/BusStop/BusStopRender1.gif';
+import BusStopRender2 from '../../assets/afantasia assets/BusStop/BusStopRender2.gif';
+import BusStopTopology from '../../assets/afantasia assets/BusStop/BusStopTopology.png';
+import BusBenchTopology from '../../assets/afantasia assets/BusStop/BusBenchTopology.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -60,6 +65,10 @@ const assetGroups = [
     {
         images: [BarEntryTopology, BarBalconyTopology, BarBasementTopology, BarCounterTopology],
         text: "Bar Scene Topology"
+    },
+    {
+        images: [BusStopRender1, BusStopRender2, BusStopTopology, BusBenchTopology],
+        text: "Bus Stop Scene In Game and Topology"
     }
 ];
 
