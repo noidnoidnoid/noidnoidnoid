@@ -21,6 +21,11 @@ import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.pn
 import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/TunnelTopology1.png';
 import TunnelTopology2 from '../../assets/afantasia assets/Tunnel/TunnelTopology2.png';
 
+import TempoSchoolRender from '../../assets/afantasia assets/TempoSchool/TempoSchoolRender.png';
+import TempoSchoolTopology from '../../assets/afantasia assets/TempoSchool/TempoSchoolTopology.png';
+import TempoSchoolBrokeTopology from '../../assets/afantasia assets/TempoSchool/TempoSchoolBrokeTopology.png';
+import LookoutWall from '../../assets/afantasia assets/TempoSchool/LookoutWall.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -33,7 +38,11 @@ const assetGroups = [
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
-        text: "Tunnel Scene Render and Topology"
+        text: "Tunnel Scene In Game and Topology"
+    },
+    {
+        images: [TempoSchoolRender, TempoSchoolTopology, TempoSchoolBrokeTopology, LookoutWall],
+        text: "Tempo School In Game and Topology"
     }
 ];
 
