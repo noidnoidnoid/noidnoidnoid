@@ -2,6 +2,8 @@ import styles from './afantasia.module.css';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
+import { ModalShowImage } from '../../Components/ModalShowImage/ModalShowImage.jsx';
+
 // Importação das imagens
 
 import RefreshIcon from '../../assets/RefreshIcon.svg';
@@ -73,40 +75,50 @@ const assetGroups = [
 ];
 
 export function Afantasia() {
-    // Estado para controlar a animação
     const [isAnimating, setIsAnimating] = useState(true);
+    const [selectedImage, setSelectedImage] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Função para alternar o estado de animação
     const toggleAnimation = () => {
-        setIsAnimating(!isAnimating);
+        setIsAnimating(prevState =>!prevState);
     };
 
+    // Função para exibir o modal de imagem 
+    function showImageDialog(image) {
+        setSelectedImage(image);
+        setIsModalOpen(true);
+    }
+
     return (
-        <div className={styles.assetsContainer}>
-            {assetGroups.map((group, index) => (
-                <motion.div className={styles.assetContainer} key={`group-${index}`}>
-                    <motion.div 
-                        className={styles.imgContainer} 
-                        drag="x" 
-                        whileTap={{ cursor: "grabbing"}}
-                        dragConstraints={{ right: 900, left: -900}} 
-                        initial={{ x: 100 }}
-                        animate={{ x: isAnimating? 0 : 100 }}
-                    >
-                        {group.images.map((image, imgIndex) => (
-                            <motion.div className={styles.item} key={`${image}-${imgIndex}`}>
-                                <img className={styles.assetImg} src={image} alt="Asset Image" />
-                            </motion.div>
-                        ))}
+        <>
+            <div className={styles.assetsContainer}>
+                {assetGroups.map((group, index) => (
+                    <motion.div className={styles.assetContainer} key={`group-${index}`}>
+                        <motion.div 
+                            className={styles.imgContainer} 
+                            drag="x" 
+                            whileTap={{ cursor: "grabbing"}}
+                            dragConstraints={{ right: 900, left: -900}} 
+                            initial={{ x: 100 }}
+                            animate={{ x: isAnimating? 0 : 100 }}
+                        >
+                            {group.images.map((image, imgIndex) => (
+                                <motion.div className={styles.item} key={`${image}-${imgIndex}`} onClick={() => showImageDialog(image)}>
+                                    <img className={styles.assetImg} src={image} alt="Asset Image" />
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                        <div className={styles.textContainer}>
+                            <p className={styles.assetText}>{group.text}</p>
+                            <button className={styles.refreshButton} onClick={toggleAnimation}>
+                                <img src={RefreshIcon}/>
+                            </button>
+                        </div>
                     </motion.div>
-                    <div className={styles.textContainer}>
-                        <p className={styles.assetText}>{group.text}</p>
-                        <button className={styles.refreshButton} onClick={toggleAnimation}>
-                            <img src={RefreshIcon}/>
-                        </button>
-                    </div>
-                </motion.div>
-            ))}
-        </div>
+                ))}
+            </div>
+            {isModalOpen && <ModalShowImage selectedImage={selectedImage} onClose={() => setIsModalOpen(false)}/>}
+        </>
     );
 }
