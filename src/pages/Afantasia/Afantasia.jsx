@@ -16,6 +16,11 @@ import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/I
 import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology1.png';
 import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology2.png';
 
+import TunnelRender1 from '../../assets/afantasia assets/Tunnel/TunnelRender1.png';
+import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.png';
+import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/TunnelTopology1.png';
+import TunnelTopology2 from '../../assets/afantasia assets/Tunnel/TunnelTopology2.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -25,6 +30,10 @@ const assetGroups = [
     {
         images: [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2],
         text: "Inventory Scene In Game, Render and Topology"
+    },
+    {
+        images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
+        text: "Tunnel Scene Render and Topology"
     }
 ];
 
@@ -40,10 +49,11 @@ export function Afantasia() {
     return (
         <div className={styles.assetsContainer}>
             {assetGroups.map((group, index) => (
-                <motion.div className={styles.assetContainer} whileTap={{ cursor: "grabbing"}} key={`group-${index}`}>
+                <motion.div className={styles.assetContainer} key={`group-${index}`}>
                     <motion.div 
                         className={styles.imgContainer} 
                         drag="x" 
+                        whileTap={{ cursor: "grabbing"}}
                         dragConstraints={{ right: 900, left: -900}} 
                         initial={{ x: 100 }}
                         animate={{ x: isAnimating? 0 : 100 }} // Altera a animação com base no estado

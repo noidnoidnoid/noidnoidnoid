@@ -18,7 +18,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    cursor: grab;
     overflow: hidden;
 }
 
@@ -27,6 +26,7 @@
     flex-direction: row;
     gap: 2rem;
     height: 40vh;
+    cursor: grab;
     overflow: hidden;
 }
 
