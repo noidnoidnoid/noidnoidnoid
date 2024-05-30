@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 // Importação das imagens
+
+import RefreshIcon from '../../assets/RefreshIcon.svg';
+
 import AloeSpin from '../../assets/afantasia assets/Aloe/AloeSpin.gif';
 import AloeStand from '../../assets/afantasia assets/Aloe/AloeStand.gif';
 import AloeTopologyFront from '../../assets/afantasia assets/Aloe/AloeTopologyFront.png';
@@ -44,7 +47,6 @@ export function Afantasia() {
                         dragConstraints={{ right: 900, left: -900}} 
                         initial={{ x: 100 }}
                         animate={{ x: isAnimating? 0 : 100 }} // Altera a animação com base no estado
-                        transition={{ duration: 0.5 }} // Adiciona uma transição suave
                     >
                         {group.images.map((image, imgIndex) => (
                             <motion.div className={styles.item} key={`${image}-${imgIndex}`}>
@@ -54,7 +56,9 @@ export function Afantasia() {
                     </motion.div>
                     <div className={styles.textContainer}>
                         <p className={styles.assetText}>{group.text}</p>
-                        <button className={styles.refreshButton} onClick={toggleAnimation}>R</button>
+                        <button className={styles.refreshButton} onClick={toggleAnimation}>
+                            <img src={RefreshIcon}/>
+                        </button>
                     </div>
                 </motion.div>
             ))}
