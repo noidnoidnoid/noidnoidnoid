@@ -26,6 +26,15 @@ import TempoSchoolTopology from '../../assets/afantasia assets/TempoSchool/Tempo
 import TempoSchoolBrokeTopology from '../../assets/afantasia assets/TempoSchool/TempoSchoolBrokeTopology.png';
 import LookoutWall from '../../assets/afantasia assets/TempoSchool/LookoutWall.png';
 
+import BarEntryRender1 from '../../assets/afantasia assets/BAR/BarEntryRender1.png';
+import BarEntryRender2 from '../../assets/afantasia assets/BAR/BarEntryRender2.png';
+import BarBalconyRender from '../../assets/afantasia assets/BAR/BarBalconyRender.png';
+import BarBasementRender from '../../assets/afantasia assets/BAR/BarBasementRender.png';
+import BarEntryTopology from '../../assets/afantasia assets/BAR/BarEntryTopology.png';
+import BarBalconyTopology from '../../assets/afantasia assets/BAR/BarBalconyTopology.png';
+import BarBasementTopology from '../../assets/afantasia assets/BAR/BarBasementTopology.png';
+import BarCounterTopology from '../../assets/afantasia assets/BAR/BarCounterTopology.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -43,6 +52,14 @@ const assetGroups = [
     {
         images: [TempoSchoolRender, TempoSchoolTopology, TempoSchoolBrokeTopology, LookoutWall],
         text: "Tempo School In Game and Topology"
+    },
+    {
+        images: [BarEntryRender1, BarEntryRender2, BarBalconyRender, BarBasementRender],
+        text: "Bar Scene In Game"
+    },
+    {
+        images: [BarEntryTopology, BarBalconyTopology, BarBasementTopology, BarCounterTopology],
+        text: "Bar Scene Topology"
     }
 ];
 
