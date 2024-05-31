@@ -46,6 +46,11 @@ import SquareInGame from '../../assets/afantasia assets/Square/SquareInGame.png'
 import SquareTopologyRender from '../../assets/afantasia assets/Square/SquareRender.png';
 import SquareTopology from '../../assets/afantasia assets/Square/SquareTopology.png';
 
+import BusInGame from '../../assets/afantasia assets/Bus/BusInGame.gif';
+import BusInteriorInGame from '../../assets/afantasia assets/Bus/BusInteriorInGame.png';
+import BusTopology from '../../assets/afantasia assets/Bus/BusTopology.gif';
+import BusInteriorTopology from '../../assets/afantasia assets/Bus/BusInteriorTopology.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -79,6 +84,10 @@ const assetGroups = [
     {
         images: [SquareInGame, SquareTopologyRender, SquareTopology],
         text: "Square Scene In Game, Render and Topology"
+    },
+    {
+        images: [BusInGame, BusInteriorInGame, BusTopology, BusInteriorTopology],
+        text: "Bus Scene In Game and Topology"
     }
 ];
 
