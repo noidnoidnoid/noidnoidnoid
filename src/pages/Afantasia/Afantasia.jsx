@@ -46,6 +46,13 @@ import SquareInGame from '../../assets/afantasia assets/Square/SquareInGame.png'
 import SquareTopologyRender from '../../assets/afantasia assets/Square/SquareRender.png';
 import SquareTopology from '../../assets/afantasia assets/Square/SquareTopology.png';
 
+import PathStairsRender1 from '../../assets/afantasia assets/PathStairs/PathStairsRender1.png';
+import PathStairsRender2 from '../../assets/afantasia assets/PathStairs/PathStairsRender2.png';
+import PathStairsTopology from '../../assets/afantasia assets/PathStairs/PathStairsTopology.png';
+
+import MessageRoomRender from '../../assets/afantasia assets/MessageRoom/MessageRoomRender.gif';
+import MessageRoomTopology from '../../assets/afantasia assets/MessageRoom/MessageRoomTopology.png';
+
 import BusInGame from '../../assets/afantasia assets/Bus/BusInGame.gif';
 import BusInteriorInGame from '../../assets/afantasia assets/Bus/BusInteriorInGame.png';
 import BusTopology from '../../assets/afantasia assets/Bus/BusTopology.gif';
@@ -63,7 +70,7 @@ const assetGroups = [
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
-        text: "Tunnel Scene In Game and Topology"
+        text: "Tunnel Level In Game and Topology"
     },
     {
         images: [TempoSchoolRender, TempoSchoolTopology, TempoSchoolBrokeTopology, LookoutWall],
@@ -71,11 +78,11 @@ const assetGroups = [
     },
     {
         images: [BarEntryRender1, BarEntryRender2, BarBalconyRender, BarBasementRender],
-        text: "Bar Scene In Game"
+        text: "Bar Level In Game"
     },
     {
         images: [BarEntryTopology, BarBalconyTopology, BarBasementTopology, BarCounterTopology],
-        text: "Bar Scene Topology"
+        text: "Bar Level Topology"
     },
     {
         images: [BusStopRender1, BusStopRender2, BusStopTopology, BusBenchTopology],
@@ -83,12 +90,21 @@ const assetGroups = [
     },
     {
         images: [SquareInGame, SquareTopologyRender, SquareTopology],
-        text: "Square Scene In Game, Render and Topology"
+        text: "Square In Game, Render and Topology"
+    },
+    {
+        images: [PathStairsRender1, PathStairsRender2, PathStairsTopology],
+        text: "Path Stairs In Game and Topology"
+    },
+    {
+        images: [MessageRoomRender, MessageRoomTopology],
+        text: "Message Room In Game and Topology"
     },
     {
         images: [BusInGame, BusInteriorInGame, BusTopology, BusInteriorTopology],
-        text: "Bus Scene In Game and Topology"
-    }
+        text: "Bus In Game, Topology and Shading"
+    },
+
 ];
 
 export function Afantasia() {
@@ -140,6 +156,7 @@ export function Afantasia() {
                                 <img src={RefreshIcon}/>
                             </button>
                         </div>
+                        <hr />
                     </motion.div>
                 ))}
             </div>

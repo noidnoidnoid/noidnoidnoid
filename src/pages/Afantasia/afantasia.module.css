@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     overflow: hidden;
 }
 
@@ -56,10 +56,14 @@
     color: var(--main-colorLight);
 }
 
+hr {
+    width: 10%;
+}
+
 .refreshButton {
     padding: .25rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .refreshButton > img {
