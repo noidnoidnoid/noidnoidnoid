@@ -1,6 +1,8 @@
 import styles from './afantasia.module.css';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { ModalShowImage } from '../../Components/ModalShowImage/ModalShowImage.jsx';
 
@@ -145,8 +147,18 @@ export function Afantasia() {
                             onDragEnd={handleDragEnd}
                         >
                             {group.images.map((image, imgIndex) => (
-                                <motion.div className={styles.item} key={`${image}-${imgIndex}`} onClick={() => showImageDialog(image)}>
-                                    <img className={styles.assetImg} src={image} alt="Asset Image" />
+                                <motion.div 
+                                className={styles.item} 
+                                key={`${image}-${imgIndex}`} 
+                                onClick={() => showImageDialog(image)}
+
+                                >
+                                    <LazyLoadImage 
+                                    className={styles.assetImg}
+                                    src={image} 
+                                    alt={image.alt} 
+                                    effect="blur"
+                                    />
                                 </motion.div>
                             ))}
                         </motion.div>
