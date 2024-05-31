@@ -1,3 +1,4 @@
+// Importing Packages and Components
 import styles from './afantasia.module.css';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -6,7 +7,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { ModalShowImage } from '../../Components/ModalShowImage/ModalShowImage.jsx';
 
-// Importação das imagens
+// Importing the images
 
 import RefreshIcon from '../../assets/RefreshIcon.svg';
 
@@ -15,10 +16,11 @@ import AloeStand from '../../assets/afantasia assets/Aloe/AloeStand.gif';
 import AloeTopologyFront from '../../assets/afantasia assets/Aloe/AloeTopologyFront.png';
 import AloeTopologyBack from '../../assets/afantasia assets/Aloe/AloeTopologyBack.png';
 
-import InventorySceneInGame from '../../assets/afantasia assets/InventoryScene/InventorySceneRenderInGame.gif';
-import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/InventorySceneRender.png';
-import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology1.png';
-import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology2.png';
+import PierRender1 from '../../assets/afantasia assets/Pier/PierRender1.png';
+import PierRender2 from '../../assets/afantasia assets/Pier/PierRender2.png';
+import PierRender3 from '../../assets/afantasia assets/Pier/PierRender3.png';
+import PierTopology1 from '../../assets/afantasia assets/Pier/PierTopology1.png';
+import PierTopology2 from '../../assets/afantasia assets/Pier/PierTopology2.png';
 
 import TunnelRender1 from '../../assets/afantasia assets/Tunnel/TunnelRender1.png';
 import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.png';
@@ -52,6 +54,11 @@ import PathStairsRender1 from '../../assets/afantasia assets/PathStairs/PathStai
 import PathStairsRender2 from '../../assets/afantasia assets/PathStairs/PathStairsRender2.png';
 import PathStairsTopology from '../../assets/afantasia assets/PathStairs/PathStairsTopology.png';
 
+import InventorySceneInGame from '../../assets/afantasia assets/InventoryScene/InventorySceneRenderInGame.gif';
+import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/InventorySceneRender.png';
+import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology1.png';
+import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology2.png';
+
 import MessageRoomRender from '../../assets/afantasia assets/MessageRoom/MessageRoomRender.gif';
 import MessageRoomTopology from '../../assets/afantasia assets/MessageRoom/MessageRoomTopology.png';
 
@@ -60,15 +67,15 @@ import BusInteriorInGame from '../../assets/afantasia assets/Bus/BusInteriorInGa
 import BusTopology from '../../assets/afantasia assets/Bus/BusTopology.gif';
 import BusInteriorTopology from '../../assets/afantasia assets/Bus/BusInteriorTopology.png';
 
-// Definição dos grupos de ativos com seus textos correspondentes
+// Definition of the assets groups and their respective texts
 const assetGroups = [
     {
         images: [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack],
         text: "Low Poly Model of Aloe Character"
     },
     {
-        images: [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2],
-        text: "Inventory Scene In Game, Render and Topology"
+        images: [PierRender1, PierRender2, PierRender3, PierTopology1, PierTopology2],
+        text: "Pier Level In Game and Topology"
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
@@ -99,6 +106,10 @@ const assetGroups = [
         text: "Path Stairs In Game and Topology"
     },
     {
+        images: [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2],
+        text: "Inventory Scene In Game, Render and Topology"
+    },
+    {
         images: [MessageRoomRender, MessageRoomTopology],
         text: "Message Room In Game and Topology"
     },
@@ -106,7 +117,6 @@ const assetGroups = [
         images: [BusInGame, BusInteriorInGame, BusTopology, BusInteriorTopology],
         text: "Bus In Game, Topology and Shading"
     },
-
 ];
 
 export function Afantasia() {
@@ -118,12 +128,12 @@ export function Afantasia() {
     const handleDragStart = () => setIsDragging(true);
     const handleDragEnd = () => setIsDragging(false);
 
-    // Função para alternar o estado de animação
+    // Function to toggle the animation state
     const toggleAnimation = () => {
-        setIsAnimating(prevState =>!prevState);
+        setIsAnimating(prevState => !prevState);
     };
 
-    // Função para exibir o modal de imagem
+    // Function to show the image dialog
     function showImageDialog(image) {
         if (!isDragging) {
             setSelectedImage(image);
