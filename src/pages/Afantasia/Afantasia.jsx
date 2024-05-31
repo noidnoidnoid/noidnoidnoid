@@ -42,6 +42,10 @@ import BusStopRender2 from '../../assets/afantasia assets/BusStop/BusStopRender2
 import BusStopTopology from '../../assets/afantasia assets/BusStop/BusStopTopology.png';
 import BusBenchTopology from '../../assets/afantasia assets/BusStop/BusBenchTopology.png';
 
+import SquareInGame from '../../assets/afantasia assets/Square/SquareInGame.png';
+import SquareTopologyRender from '../../assets/afantasia assets/Square/SquareRender.png';
+import SquareTopology from '../../assets/afantasia assets/Square/SquareTopology.png';
+
 // Definição dos grupos de ativos com seus textos correspondentes
 const assetGroups = [
     {
@@ -71,6 +75,10 @@ const assetGroups = [
     {
         images: [BusStopRender1, BusStopRender2, BusStopTopology, BusBenchTopology],
         text: "Bus Stop Scene In Game and Topology"
+    },
+    {
+        images: [SquareInGame, SquareTopologyRender, SquareTopology],
+        text: "Square Scene In Game, Render and Topology"
     }
 ];
 
