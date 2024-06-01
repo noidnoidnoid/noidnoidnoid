@@ -11,70 +11,70 @@ import { ModalShowImage } from '../../Components/ModalShowImage/ModalShowImage.j
 
 import RefreshIcon from '../../assets/RefreshIcon.svg';
 
-import AloeSpin from '../../assets/afantasia assets/Aloe/AloeSpin.gif';
-import AloeStand from '../../assets/afantasia assets/Aloe/AloeStand.gif';
-import AloeTopologyFront from '../../assets/afantasia assets/Aloe/AloeTopologyFront.png';
-import AloeTopologyBack from '../../assets/afantasia assets/Aloe/AloeTopologyBack.png';
+import AloeSpin from '../../assets/afantasia assets/Aloe/Aloe_Spin.gif';
+import AloeStand from '../../assets/afantasia assets/Aloe/Aloe_Stand.gif';
+import AloeTopologyFront from '../../assets/afantasia assets/Aloe/Aloe_Topology_Front.png';
+import AloeTopologyBack from '../../assets/afantasia assets/Aloe/Aloe_Topology_Back.png';
 
-import PierRender1 from '../../assets/afantasia assets/Pier/PierRender1.png';
-import PierRender2 from '../../assets/afantasia assets/Pier/PierRender2.png';
-import PierRender3 from '../../assets/afantasia assets/Pier/PierRender3.png';
-import PierTopology1 from '../../assets/afantasia assets/Pier/PierTopology1.png';
-import PierTopology2 from '../../assets/afantasia assets/Pier/PierTopology2.png';
+import PierRender1 from '../../assets/afantasia assets/Pier/Pier_Render_1.png';
+import PierRender2 from '../../assets/afantasia assets/Pier/Pier_Render_2.png';
+import PierRender3 from '../../assets/afantasia assets/Pier/Pier_Render_3.png';
+import PierTopology1 from '../../assets/afantasia assets/Pier/Pier_Topology_1.png';
+import PierTopology2 from '../../assets/afantasia assets/Pier/Pier_Topology_2.png';
 
-import GhostAlleyRender1 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender1.gif';
-import GhostAlleyRender2 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender2.png';
-import GhostAlleyRender3 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender3.png'; 
-import GhostAlleyTopology1 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology1.png';
-import GhostAlleyTopology2 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology2.png';
+import GhostAlleyRender1 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_1.gif';
+import GhostAlleyRender2 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_2.png';
+import GhostAlleyRender3 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_3.png'; 
+import GhostAlleyTopology1 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Topology_1.png';
+import GhostAlleyTopology2 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Topology_2.png';
 
-import SwingRender from '../../assets/afantasia assets/Swing/SwingRender.gif';
-import SwingTopology from '../../assets/afantasia assets/Swing/SwingTopology.png';
+import SwingRender from '../../assets/afantasia assets/Swing/Swing_Render.gif';
+import SwingTopology from '../../assets/afantasia assets/Swing/Swing_Topology.png';
 
-import TunnelRender1 from '../../assets/afantasia assets/Tunnel/TunnelRender1.png';
-import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.png';
-import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/TunnelTopology1.png';
-import TunnelTopology2 from '../../assets/afantasia assets/Tunnel/TunnelTopology2.png';
+import TunnelRender1 from '../../assets/afantasia assets/Tunnel/Tunnel_Render_1.png';
+import TunnelRender2 from '../../assets/afantasia assets/Tunnel/Tunnel_Render_2.png';
+import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/Tunnel_Topology_1.png';
+import TunnelTopology2 from '../../assets/afantasia assets/Tunnel/Tunnel_Topology_2.png';
 
-import TempoSchoolRender from '../../assets/afantasia assets/TempoSchool/TempoSchoolRender.png';
-import TempoSchoolTopology from '../../assets/afantasia assets/TempoSchool/TempoSchoolTopology.png';
-import TempoSchoolBrokeTopology from '../../assets/afantasia assets/TempoSchool/TempoSchoolBrokeTopology.png';
-import LookoutWall from '../../assets/afantasia assets/TempoSchool/LookoutWall.png';
+import TempoSchoolRender from '../../assets/afantasia assets/TempoSchool/Tempo_School_Render.png';
+import TempoSchoolTopology from '../../assets/afantasia assets/TempoSchool/Tempo_School_Topology.png';
+import TempoSchoolBrokeTopology from '../../assets/afantasia assets/TempoSchool/Tempo_School_Broke_Topology.png';
+import LookoutWall from '../../assets/afantasia assets/TempoSchool/Lookout_Wall.png';
 
-import BarEntryRender1 from '../../assets/afantasia assets/BAR/BarEntryRender1.png';
-import BarEntryRender2 from '../../assets/afantasia assets/BAR/BarEntryRender2.png';
-import BarBalconyRender from '../../assets/afantasia assets/BAR/BarBalconyRender.png';
-import BarBasementRender from '../../assets/afantasia assets/BAR/BarBasementRender.png';
-import BarEntryTopology from '../../assets/afantasia assets/BAR/BarEntryTopology.png';
-import BarBalconyTopology from '../../assets/afantasia assets/BAR/BarBalconyTopology.png';
-import BarBasementTopology from '../../assets/afantasia assets/BAR/BarBasementTopology.png';
-import BarCounterTopology from '../../assets/afantasia assets/BAR/BarCounterTopology.png';
+import BarEntryRender1 from '../../assets/afantasia assets/BAR/Bar_Entry_Render_1.png';
+import BarEntryRender2 from '../../assets/afantasia assets/BAR/Bar_Entry_Render_2.png';
+import BarBalconyRender from '../../assets/afantasia assets/BAR/Bar_Balcony_Render.png';
+import BarBasementRender from '../../assets/afantasia assets/BAR/Bar_Basement_Render.png';
+import BarEntryTopology from '../../assets/afantasia assets/BAR/Bar_Entry_Topology.png';
+import BarBalconyTopology from '../../assets/afantasia assets/BAR/Bar_Balcony_Topology.png';
+import BarBasementTopology from '../../assets/afantasia assets/BAR/Bar_Basement_Topology.png';
+import BarCounterTopology from '../../assets/afantasia assets/BAR/Bar_Counter_Topology.png';
 
-import BusStopRender1 from '../../assets/afantasia assets/BusStop/BusStopRender1.gif';
-import BusStopRender2 from '../../assets/afantasia assets/BusStop/BusStopRender2.gif';
-import BusStopTopology from '../../assets/afantasia assets/BusStop/BusStopTopology.png';
-import BusBenchTopology from '../../assets/afantasia assets/BusStop/BusBenchTopology.png';
+import BusStopRender1 from '../../assets/afantasia assets/BusStop/Bus_Stop_Render_1.gif';
+import BusStopRender2 from '../../assets/afantasia assets/BusStop/Bus_Stop_Render_2.gif';
+import BusStopTopology from '../../assets/afantasia assets/BusStop/Bus_Stop_Topology.png';
+import BusBenchTopology from '../../assets/afantasia assets/BusStop/Bus_Bench_Topology.png';
 
-import SquareInGame from '../../assets/afantasia assets/Square/SquareInGame.png';
-import SquareTopologyRender from '../../assets/afantasia assets/Square/SquareRender.png';
-import SquareTopology from '../../assets/afantasia assets/Square/SquareTopology.png';
+import SquareInGame from '../../assets/afantasia assets/Square/Square_In_Game.png';
+import SquareTopologyRender from '../../assets/afantasia assets/Square/Square_Render.png';
+import SquareTopology from '../../assets/afantasia assets/Square/Square_Topology.png';
 
-import PathStairsRender1 from '../../assets/afantasia assets/PathStairs/PathStairsRender1.png';
-import PathStairsRender2 from '../../assets/afantasia assets/PathStairs/PathStairsRender2.png';
-import PathStairsTopology from '../../assets/afantasia assets/PathStairs/PathStairsTopology.png';
+import PathStairsRender1 from '../../assets/afantasia assets/PathStairs/Path_Stairs_Render_1.png';
+import PathStairsRender2 from '../../assets/afantasia assets/PathStairs/Path_Stairs_Render_2.png';
+import PathStairsTopology from '../../assets/afantasia assets/PathStairs/Path_Stairs_Topology.png';
 
-import InventorySceneInGame from '../../assets/afantasia assets/InventoryScene/InventorySceneRenderInGame.gif';
-import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/InventorySceneRender.png';
-import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology1.png';
-import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/InventoryScene-Topology2.png';
+import InventorySceneInGame from '../../assets/afantasia assets/InventoryScene/Inventory_Scene_Render_In_Game.gif';
+import InventorySceneRender from '../../assets/afantasia assets/InventoryScene/Inventory_Scene_Render.png';
+import InventorySceneTopology1 from '../../assets/afantasia assets/InventoryScene/Inventory_Scene_Topology_1.png';
+import InventorySceneTopology2 from '../../assets/afantasia assets/InventoryScene/Inventory_Scene_Topology_2.png';
 
-import MessageRoomRender from '../../assets/afantasia assets/MessageRoom/MessageRoomRender.gif';
-import MessageRoomTopology from '../../assets/afantasia assets/MessageRoom/MessageRoomTopology.png';
+import MessageRoomRender from '../../assets/afantasia assets/MessageRoom/Message_Room_Render.gif';
+import MessageRoomTopology from '../../assets/afantasia assets/MessageRoom/Message_Room_Topology.png';
 
-import BusInGame from '../../assets/afantasia assets/Bus/BusInGame.gif';
-import BusInteriorInGame from '../../assets/afantasia assets/Bus/BusInteriorInGame.png';
-import BusTopology from '../../assets/afantasia assets/Bus/BusTopology.gif';
-import BusInteriorTopology from '../../assets/afantasia assets/Bus/BusInteriorTopology.png';
+import BusInGame from '../../assets/afantasia assets/Bus/Bus_In_Game.gif';
+import BusInteriorInGame from '../../assets/afantasia assets/Bus/Bus_Interior_In_Game.png';
+import BusTopology from '../../assets/afantasia assets/Bus/Bus_Topology.gif';
+import BusInteriorTopology from '../../assets/afantasia assets/Bus/Bus_Interior_Topology.png';
 
 
 // Definition of the assets groups and their respective texts
@@ -140,6 +140,7 @@ const assetGroups = [
 export function Afantasia() {
     const [isAnimating, setIsAnimating] = useState(true);
     const [selectedImage, setSelectedImage] = useState('');
+    const [selectedImageName, setSelectedImageName] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
@@ -154,6 +155,9 @@ export function Afantasia() {
     // Function to show the image dialog
     function showImageDialog(image) {
         if (!isDragging) {
+            document.body.classList.add('no-scroll');// Disable page scroll
+
+            setSelectedImageName(image.split('/').pop().split('.')[0]);
             setSelectedImage(image);
             setIsModalOpen(true);
         }
@@ -179,7 +183,6 @@ export function Afantasia() {
                                 className={styles.item} 
                                 key={`${image}-${imgIndex}`} 
                                 onClick={() => showImageDialog(image)}
-
                                 >
                                     <LazyLoadImage 
                                     className={styles.assetImg}
@@ -190,7 +193,6 @@ export function Afantasia() {
                                     <div className={styles.imgIndexContainer}>
                                         <p className={styles.imgIndexText}>{imgIndex + 1}/{group.images.length}</p>
                                     </div>
-                                    
                                 </motion.div>
                             ))}
                         </motion.div>
@@ -204,7 +206,14 @@ export function Afantasia() {
                     </motion.div>
                 ))}
             </div>
-            {isModalOpen && <ModalShowImage selectedImage={selectedImage} onClose={() => setIsModalOpen(false)}/>}
+            {isModalOpen && <ModalShowImage 
+            selectedImage={selectedImage} 
+            selectedImageName={selectedImageName} 
+            onClose={() => {
+                setIsModalOpen(false);
+                document.body.classList.remove('no-scroll');
+            }}
+/>          }
         </>
     );
 }

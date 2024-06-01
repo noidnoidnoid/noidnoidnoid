@@ -17,6 +17,11 @@
   --main-colorBlue: #646cff;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 html,
 body,
 div,
