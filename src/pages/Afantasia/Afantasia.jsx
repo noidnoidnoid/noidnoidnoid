@@ -28,6 +28,9 @@ import GhostAlleyRender3 from '../../assets/afantasia assets/GhostAlley/GhostAll
 import GhostAlleyTopology1 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology1.png';
 import GhostAlleyTopology2 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology2.png';
 
+import SwingRender from '../../assets/afantasia assets/Swing/SwingRender.gif';
+import SwingTopology from '../../assets/afantasia assets/Swing/SwingTopology.png';
+
 import TunnelRender1 from '../../assets/afantasia assets/Tunnel/TunnelRender1.png';
 import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.png';
 import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/TunnelTopology1.png';
@@ -87,6 +90,10 @@ const assetGroups = [
     {
         images: [GhostAlleyRender1, GhostAlleyRender2, GhostAlleyRender3, GhostAlleyTopology1, GhostAlleyTopology2],
         text: "Ghost Alley In Game and Topology"
+    },
+    {
+        images: [SwingRender, SwingTopology],
+        text: "Swing In Game and Topology"
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
