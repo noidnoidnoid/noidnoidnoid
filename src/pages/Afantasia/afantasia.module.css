@@ -64,6 +64,7 @@ hr {
     padding: .25rem;
     width: 2.5rem;
     height: 2.5rem;
+    background-color: var(--main-colorDarker);
 }
 
 .refreshButton > img {
@@ -75,7 +76,7 @@ hr {
     .assetsContainer{
         max-width: 98%;
     }
-    .imgContainer {
+    .assetImg {
         height: 30vh;
     }
 }
