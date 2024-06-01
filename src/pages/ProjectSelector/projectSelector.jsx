@@ -27,11 +27,10 @@ export function ProjectSelector() {
                     onClick={redirectToAfantasiaPage}
                     effect="blur"
                     />
-                    <LazyLoadImage 
+                    <img
                     className={styles.projectLogo} 
                     src={AfantasiaLogo} 
                     onClick={redirectToAfantasiaPage}
-                    effect="blur"
                     />
                 </motion.div>
                 <motion.div 

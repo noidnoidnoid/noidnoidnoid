@@ -22,6 +22,12 @@ import PierRender3 from '../../assets/afantasia assets/Pier/PierRender3.png';
 import PierTopology1 from '../../assets/afantasia assets/Pier/PierTopology1.png';
 import PierTopology2 from '../../assets/afantasia assets/Pier/PierTopology2.png';
 
+import GhostAlleyRender1 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender1.gif';
+import GhostAlleyRender2 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender2.png';
+import GhostAlleyRender3 from '../../assets/afantasia assets/GhostAlley/GhostAlleyRender3.png'; 
+import GhostAlleyTopology1 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology1.png';
+import GhostAlleyTopology2 from '../../assets/afantasia assets/GhostAlley/GhostAlleyTopology2.png';
+
 import TunnelRender1 from '../../assets/afantasia assets/Tunnel/TunnelRender1.png';
 import TunnelRender2 from '../../assets/afantasia assets/Tunnel/TunnelRender2.png';
 import TunnelTopology1 from '../../assets/afantasia assets/Tunnel/TunnelTopology1.png';
@@ -67,6 +73,7 @@ import BusInteriorInGame from '../../assets/afantasia assets/Bus/BusInteriorInGa
 import BusTopology from '../../assets/afantasia assets/Bus/BusTopology.gif';
 import BusInteriorTopology from '../../assets/afantasia assets/Bus/BusInteriorTopology.png';
 
+
 // Definition of the assets groups and their respective texts
 const assetGroups = [
     {
@@ -76,6 +83,10 @@ const assetGroups = [
     {
         images: [PierRender1, PierRender2, PierRender3, PierTopology1, PierTopology2],
         text: "Pier Level In Game and Topology"
+    },
+    {
+        images: [GhostAlleyRender1, GhostAlleyRender2, GhostAlleyRender3, GhostAlleyTopology1, GhostAlleyTopology2],
+        text: "Ghost Alley In Game and Topology"
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
