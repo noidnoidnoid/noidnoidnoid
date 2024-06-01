@@ -13,7 +13,7 @@ main {
   flex-direction: column;
   align-items: center;
   height: auto;
-  width: 85%;
+  width: 95%;
   gap: 3rem;
 }
 
@@ -55,7 +55,7 @@ main {
 
 @keyframes moveX {
   from { left: 0; }
-  to { left: calc(85vw - 25rem); }
+  to { left: calc(95vw - 25rem); }
 }
 
 @keyframes moveY {
@@ -67,7 +67,6 @@ main {
 @media (max-width: 2000px) {
   .projectSelectorContainer {
     padding-bottom: 12rem;
-    width: 90%;
     gap: 2.5rem;
   }
 }
@@ -75,15 +74,12 @@ main {
 @media (max-width: 1500px) {
   .projectSelectorContainer {
     padding-bottom: 1.5rem;
-    width: 85%;
     gap: 3rem;
   }
 }
 
 @media (max-width: 1000px) {
-  .projectSelectorContainer {
-    width: 95%;
-  }
+
 }
 
 @media (max-width: 1000px) {
