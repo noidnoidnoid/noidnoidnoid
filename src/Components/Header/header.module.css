@@ -72,12 +72,12 @@ header {
 
 @media (max-width: 500px) {
     header{
-        height: 3rem;
+        height: 4rem;
     }
     .contact, .name {
-        font-size: .5rem;
+        font-size: .65rem;
     }
     .projectSelectorTitle {
-        font-size: .65rem;
+        font-size: .8rem;
     }
 }

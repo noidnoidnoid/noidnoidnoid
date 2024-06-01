@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Lemon Milk;
-  src: url(3D-Portfolio\src\assets\LEMONMILK-LIGHT.OTF) format('truetype');
+  src: url(.\assets\LEMONMILK-LIGHT.OTF) format('truetype');
 }
 
 :root {
@@ -14,7 +14,12 @@
   --main-colorDark: #242424;
   --main-colorDarker: #1a1a1a;
   --main-colorFuchsia: #ff0054;
+  --main-colorBlue: #646cff;
+}
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 html,
@@ -126,6 +131,7 @@ aside {
 
 body {
   line-height: 1;
+  background-color: var(--main-colorDarker);
 }
 
 ol,
@@ -144,4 +150,34 @@ q:before,
 q:after {
   content: '';
   content: none;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
 }

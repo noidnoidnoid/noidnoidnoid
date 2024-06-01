@@ -1,17 +1,23 @@
 {
   "name": "3d-portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "homepage": "3D-Portfolio/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r git@github.com:noidnoidnoid/3D-Portfolio.git"
   },
   "dependencies": {
+    "esm": "^3.2.25",
+    "framer-motion": "^11.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
@@ -22,6 +28,12 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
-  }
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.11"
+  },
+  "description": "Design and Modeling: Blender.\r Rendering: Unreal Engine. \r Website developed in React + Vite.",
+  "main": "vite.config.js",
+  "module": "main.js",
+  "author": "",
+  "license": "ISC"
 }

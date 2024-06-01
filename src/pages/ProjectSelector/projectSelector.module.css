@@ -3,22 +3,17 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: var(--main-colorDark);
-  height: 90vh;
   width: 100vw;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .projectSelectorContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
   height: auto;
-  width: 80vw;
-  max-width: 1500px;
+  width: 95%;
   gap: 3rem;
 }
 
@@ -29,15 +24,15 @@ main {
   overflow: hidden;
 }
 
-.projectContainer:has(.projectImg:hover) {
+.projectContainer:has(.projectImg:hover, .projectLogo:hover) {
   cursor: pointer;
   outline: 2px solid var(--main-colorFuchsia);
 }
 
 .projectImg {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit:contain;
 } 
 
 .projectLogo {
@@ -46,15 +41,21 @@ main {
   height: auto;
   object-fit: contain;
   position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
   -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   -moz-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   -o-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
 }
-  
+
+.projectLogo:hover {
+  opacity: 0;
+}
+
 @keyframes moveX {
   from { left: 0; }
-  to { left: calc(80vw - 25rem); }
+  to { left: calc(95vw - 25rem); }
 }
 
 @keyframes moveY {
@@ -62,8 +63,19 @@ main {
   to { top: calc(100% - 3.72rem); } 
 }
 
-@media (max-width: 1600px) {
 
+@media (max-width: 2000px) {
+  .projectSelectorContainer {
+    padding-bottom: 12rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .projectSelectorContainer {
+    padding-bottom: 1.5rem;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -74,6 +86,10 @@ main {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
 
 }
