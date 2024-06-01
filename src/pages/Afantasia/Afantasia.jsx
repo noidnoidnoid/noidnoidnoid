@@ -157,7 +157,7 @@ export function Afantasia() {
         if (!isDragging) {
             document.body.classList.add('no-scroll');// Disable page scroll
 
-            setSelectedImageName(image.split('/').pop().split('.')[0]);
+            setSelectedImageName(image.split('/').pop().split('-')[0].split('.')[0]);
             setSelectedImage(image);
             setIsModalOpen(true);
         }
