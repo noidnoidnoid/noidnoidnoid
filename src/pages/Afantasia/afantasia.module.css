@@ -31,6 +31,10 @@
     overflow: hidden;
 }
 
+.item {
+    position: relative;
+}
+
 .item:hover{
     outline: 2px solid var(--main-colorBlue);
 }
@@ -40,6 +44,20 @@
     width: auto;
     object-fit: contain;
     pointer-events: none;
+}
+
+.imgIndexContainer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #1a1a1acc;
+    padding: 5px;
+}
+
+.imgIndexText {
+    font-family: "Lemon Milk";
+    font-size: 1rem;
+    color: var(--main-colorLight);
 }
 
 .textContainer {

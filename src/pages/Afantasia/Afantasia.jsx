@@ -187,6 +187,10 @@ export function Afantasia() {
                                     alt={image.alt} 
                                     effect="blur"
                                     />
+                                    <div className={styles.imgIndexContainer}>
+                                        <p className={styles.imgIndexText}>{imgIndex + 1}/{group.images.length}</p>
+                                    </div>
+                                    
                                 </motion.div>
                             ))}
                         </motion.div>
