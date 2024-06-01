@@ -81,31 +81,31 @@ import BusInteriorTopology from '../../assets/afantasia assets/Bus/Bus_Interior_
 const assetGroups = [
     {
         images: [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack],
-        text: "Low Poly Model of Aloe Character"
+        text: "Low Poly Character: Aloe"
     },
     {
         images: [PierRender1, PierRender2, PierRender3, PierTopology1, PierTopology2],
-        text: "Pier Level In Game and Topology"
+        text: "Pier Scene"
     },
     {
         images: [GhostAlleyRender1, GhostAlleyRender2, GhostAlleyRender3, GhostAlleyTopology1, GhostAlleyTopology2],
-        text: "Ghost Alley In Game and Topology"
+        text: "Ghost Alley"
     },
     {
         images: [SwingRender, SwingTopology],
-        text: "Swing In Game and Topology"
+        text: "Swing Asset"
     },
     {
         images: [TunnelRender1, TunnelRender2, TunnelTopology1, TunnelTopology2],
-        text: "Tunnel Level In Game and Topology"
+        text: "Tunnel Level"
     },
     {
         images: [TempoSchoolRender, TempoSchoolTopology, TempoSchoolBrokeTopology, LookoutWall],
-        text: "Tempo School In Game and Topology"
+        text: "Tempo School"
     },
     {
         images: [BarEntryRender1, BarEntryRender2, BarBalconyRender, BarBasementRender],
-        text: "Bar Level In Game"
+        text: "Bar Level"
     },
     {
         images: [BarEntryTopology, BarBalconyTopology, BarBasementTopology, BarCounterTopology],
@@ -113,27 +113,27 @@ const assetGroups = [
     },
     {
         images: [BusStopRender1, BusStopRender2, BusStopTopology, BusBenchTopology],
-        text: "Bus Stop Scene In Game and Topology"
+        text: "Bus Stop Scene"
     },
     {
         images: [SquareInGame, SquareTopologyRender, SquareTopology],
-        text: "Square In Game, Render and Topology"
+        text: "Square Asset"
     },
     {
         images: [PathStairsRender1, PathStairsRender2, PathStairsTopology],
-        text: "Path Stairs In Game and Topology"
+        text: "Path Stairs"
     },
     {
         images: [InventorySceneInGame, InventorySceneRender, InventorySceneTopology1, InventorySceneTopology2],
-        text: "Inventory Scene In Game, Render and Topology"
+        text: "Inventory Scene"
     },
     {
         images: [MessageRoomRender, MessageRoomTopology],
-        text: "Message Room In Game and Topology"
+        text: "Message Room"
     },
     {
         images: [BusInGame, BusInteriorInGame, BusTopology, BusInteriorTopology],
-        text: "Bus In Game, Topology and Shading"
+        text: "Bus Asset"
     },
 ];
 
