@@ -15,6 +15,7 @@ import AloeSpin from '../../assets/afantasia assets/Aloe/Aloe_Spin.gif';
 import AloeStand from '../../assets/afantasia assets/Aloe/Aloe_Stand.gif';
 import AloeTopologyFront from '../../assets/afantasia assets/Aloe/Aloe_Topology_Front.png';
 import AloeTopologyBack from '../../assets/afantasia assets/Aloe/Aloe_Topology_Back.png';
+import AloeRigging from '../../assets/afantasia assets/Aloe/Aloe_Rigging.gif';
 
 import PierRender1 from '../../assets/afantasia assets/Pier/Pier_Render_1.png';
 import PierRender2 from '../../assets/afantasia assets/Pier/Pier_Render_2.png';
@@ -80,7 +81,7 @@ import BusInteriorTopology from '../../assets/afantasia assets/Bus/Bus_Interior_
 // Definition of the assets groups and their respective texts
 const assetGroups = [
     {
-        images: [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack],
+        images: [AloeSpin, AloeStand, AloeTopologyFront, AloeTopologyBack, AloeRigging],
         text: "Low Poly Character: Aloe"
     },
     {
