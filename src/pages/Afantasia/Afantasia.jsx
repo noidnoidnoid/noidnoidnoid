@@ -23,6 +23,10 @@ import PierRender3 from '../../assets/afantasia assets/Pier/Pier_Render_3.png';
 import PierTopology1 from '../../assets/afantasia assets/Pier/Pier_Topology_1.png';
 import PierTopology2 from '../../assets/afantasia assets/Pier/Pier_Topology_2.png';
 
+import WalkwayRender1 from '../../assets/afantasia assets/Walkway/Walkway_Render_1.png';
+import WalkwayRender2 from '../../assets/afantasia assets/Walkway/Walkway_Render_2.png';
+import WalkwayTopology1 from '../../assets/afantasia assets/Walkway/Walkway_Topology.png';
+
 import GhostAlleyRender1 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_1.gif';
 import GhostAlleyRender2 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_2.png';
 import GhostAlleyRender3 from '../../assets/afantasia assets/GhostAlley/Ghost_Alley_Render_3.png'; 
@@ -87,6 +91,10 @@ const assetGroups = [
     {
         images: [PierRender1, PierRender2, PierRender3, PierTopology1, PierTopology2],
         text: "Pier Scene"
+    },
+    {
+        images: [WalkwayRender1, WalkwayRender2, WalkwayTopology1],
+        text: "Walkway Scene"
     },
     {
         images: [GhostAlleyRender1, GhostAlleyRender2, GhostAlleyRender3, GhostAlleyTopology1, GhostAlleyTopology2],
