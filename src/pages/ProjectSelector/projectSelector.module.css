@@ -18,10 +18,14 @@ main {
 }
 
 .projectContainer {
+  display: flex;
   width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 
 .projectContainer:has(.projectImg:hover, .projectLogo:hover) {
@@ -49,7 +53,19 @@ main {
   animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
 }
 
-.projectLogo:hover {
+.projectLogoStatic {
+  display: block;
+  left: 50px;
+  bottom: 25px;
+  width: 20vw;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.projectLogo:hover, .projectLogoStatic:hover {
   opacity: 0;
 }
 
