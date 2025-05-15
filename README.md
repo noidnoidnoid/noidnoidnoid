@@ -5,4 +5,4 @@ Rendering: Unreal Engine.
 Website developed in React + Vite.
 
 Site
-- https://noidnoidnoid.github.io/3D-Portfolio/
+- https://noidnoidnoid.github.io/noidnoidnoid/
